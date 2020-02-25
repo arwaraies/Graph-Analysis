@@ -1,0 +1,52 @@
+{
+    "entities": {
+        "all": {
+            "num_partitions": 1,
+            "featurized": false
+        }
+    },
+    "relations": [
+        {
+            "name": "all_edges",
+            "lhs": "all",
+            "rhs": "all",
+            "weight": 1.0,
+            "operator": "translation",
+            "all_negs": false
+        }
+    ],
+    "dimension": 128,
+    "init_scale": 0.001,
+    "max_norm": null,
+    "global_emb": false,
+    "comparator": "dot",
+    "bias": false,
+    "loss_fn": "softmax",
+    "margin": 0.1,
+    "entity_path": "data/target-kg/v01",
+    "edge_paths": [
+        "data/target-kg/v01/train_partitioned"
+    ],
+    "checkpoint_path": "model/model",
+    "init_path": null,
+    "num_epochs": 10,
+    "num_edge_chunks": 1,
+    "bucket_order": "inside_out",
+    "workers": null,
+    "batch_size": 1000,
+    "num_batch_negs": 50,
+    "num_uniform_negs": 50,
+    "lr": 0.1,
+    "relation_lr": null,
+    "eval_fraction": 0.01,
+    "eval_num_batch_negs": 1000,
+    "eval_num_uniform_negs": 1000,
+    "background_io": false,
+    "verbose": 0,
+    "hogwild_delay": 2.0,
+    "dynamic_relations": true,
+    "num_machines": 1,
+    "num_partition_servers": -1,
+    "distributed_init_method": null,
+    "distributed_tree_init_order": true
+}
