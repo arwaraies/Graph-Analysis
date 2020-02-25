@@ -1,2 +1,2 @@
 # Graph-Analysis
-Developing models for big networks
+Models for big graphs
