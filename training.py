@@ -10,6 +10,7 @@ from torchbiggraph.converters.import_from_tsv import convert_input_data
 from torchbiggraph.eval import do_eval
 from torchbiggraph.train import train
 
+#list of file names used for training and testing
 FILENAMES = {
     'train': 'target-kg/v01/train.txt',
     'valid': 'target-kg/v01/valid.txt',
