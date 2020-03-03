@@ -24,7 +24,7 @@ def convert_path(fname):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Example on FB15k')
+    parser = argparse.ArgumentParser(description='Testing')
     parser.add_argument('--config', default='examples/configs/complex_config.py',
                         help='Path to config file')
     parser.add_argument('-p', '--param', action='append', nargs='*')
