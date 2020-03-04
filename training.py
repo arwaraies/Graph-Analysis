@@ -26,7 +26,7 @@ def convert_path(fname):
 
 def main():
     parser = argparse.ArgumentParser(description='Training')
-    parser.add_argument('--config', default='examples/configs/complex_config.py',
+    parser.add_argument('--config', default='configs/complex_config.py',
                         help='Path to config file')
     parser.add_argument('-p', '--param', action='append', nargs='*')
     parser.add_argument('--data_dir', default='data',
