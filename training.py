@@ -41,7 +41,7 @@ def main():
 
     count = 0
             
-    parser.set_defaults(config='examples/configs/translation_config.py')
+    parser.set_defaults(config='configs/translation_config.py')
                                                                      
     args = parser.parse_args()
     args.param = [params]
